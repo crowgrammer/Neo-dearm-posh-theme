@@ -5,12 +5,12 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "cyan",
+          "foreground": "#15C2CB",
           "properties": {
             "style": "folder"
           },
           "style": "plain",
-          "template": "<#ffffff>in</> {{ .Path }} ",
+          "template": "{{ .Path }} ",
           "type": "path"
         },
         {
@@ -24,41 +24,42 @@
           "type": "git"
         },
         {
-          "foreground": "#906cff",
-          "style": "powerline",
-          "template": "[\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}] ",
+          "foreground": "#ffdd51",
+          "style": "plain",
+          "template": "<#ffffff>via</> \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "type": "python"
         },
+
         {
-          "foreground": "#7FD5EA",
-          "style": "powerline",
-          "template": "[\ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] ",
+          "foreground": "#00add8",
+          "style": "plain",
+          "template": "<#ffffff>via</> \ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "go"
         },
         {
-          "foreground": "#76b367",
-          "style": "powerline",
-          "template": "[\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}] ",
+          "foreground": "#90c53f",
+          "style": "plain",
+          "template": "<#ffffff>via</> \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "type": "node"
         },
         {
           "foreground": "#f44336",
-          "style": "powerline",
-          "template": "[\ue791{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] ",
+          "style": "plain",
+          "template": "<#ffffff>via</> \ue791{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "ruby"
         },
         {
-          "foreground": "#ea2d2e",
-          "style": "powerline",
-          "template": "[\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}] ",
+          "foreground": "#ffa425",
+          "style": "plain",
+          "template": "<#ffffff>via</> \ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "java"
         },
         {
-          "foreground": "#4063D8",
-          "style": "powerline",
-          "template": " \ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
+          "foreground": "#9558b2",
+          "style": "plain",
+          "template": "<#ffffff>via</>  \ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "julia"
-        },
+        }
       ],
       "type": "prompt"
     },
