@@ -10,6 +10,7 @@ it supports a wide veraity of enviroments:
 - rust
 - ruby
 - julia
+- DotNet
 
 # Screenshots
 

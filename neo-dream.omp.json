@@ -63,8 +63,14 @@
         {
           "foreground": "#9558b2",
           "style": "plain",
-          "template": "<#ffffff>via</>  \ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
+          "template": "<#ffffff>via</> \ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "julia"
+        },
+        {
+          "foreground": "#bb89f3",
+          "style": "plain",
+          "template": "<#ffffff>via</> \ue70c {{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }} ",
+          "type": "dotnet"
         }
       ],
       "type": "prompt"
